@@ -1,5 +1,5 @@
-# Hello World
-# ls
+Hello World
+
 ls
 ls -l
 ls -l /opt
