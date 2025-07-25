@@ -1,0 +1,57 @@
+{
+  "valid_users": [
+    {
+      "email": "test@example.com",
+      "password": "Test123!",
+      "first_name": "Test",
+      "last_name": "User",
+      "role": "customer"
+    },
+    {
+      "email": "admin@yourstore.com",
+      "password": "admin",
+      "first_name": "Admin",
+      "last_name": "User",
+      "role": "admin"
+    }
+  ],
+  "invalid_users": [
+    {
+      "email": "invalid@example.com",
+      "password": "wrongpass",
+      "expected_error": "Login was unsuccessful"
+    },
+    {
+      "email": "notexist@example.com",
+      "password": "password123",
+      "expected_error": "No customer account found"
+    },
+    {
+      "email": "",
+      "password": "password123",
+      "expected_error": "Please enter your email"
+    },
+    {
+      "email": "test@example.com",
+      "password": "",
+      "expected_error": "Please enter your password"
+    }
+  ],
+  "test_products": [
+    {
+      "name": "laptop",
+      "category": "computers",
+      "price_range": "500-2000"
+    },
+    {
+      "name": "smartphone",
+      "category": "electronics",
+      "price_range": "200-1000"
+    },
+    {
+      "name": "book",
+      "category": "books",
+      "price_range": "10-50"
+    }
+  ]
+}

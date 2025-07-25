@@ -1,0 +1,15 @@
+TestCase,Keyword,url,email,password,search_term,category,expected_title,expected_url,browser,seconds,filename
+Home_Page_Test,open_browser,,,,,,,,,chrome,,
+Home_Page_Test,navigate_to_url,https://demo.nopcommerce.com/,,,,,,,,,
+Home_Page_Test,verify_page_title,,,,,,,nopCommerce demo store,,,
+Home_Page_Test,search_product,,,,,laptop,,,,,
+Home_Page_Test,wait_for_seconds,,,,,,,,,,2,
+Home_Page_Test,take_screenshot,,,,,,,,,,,search_results.png
+Home_Page_Test,close_browser,,,,,,,,,,,
+Category_Navigation,open_browser,,,,,,,,,chrome,,
+Category_Navigation,navigate_to_home_page,,,,,,,,,,,
+Category_Navigation,click_category,,,,,computers,,,,,
+Category_Navigation,wait_for_seconds,,,,,,,,,,3,
+Category_Navigation,verify_current_url,,,,,,,/computers,,,
+Category_Navigation,take_screenshot,,,,,,,,,,,computers_page.png
+Category_Navigation,close_browser,,,,,,,,,,,
