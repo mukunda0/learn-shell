@@ -1,0 +1,14 @@
+TestCase,Keyword,email,password,expected_title,expected_url,browser,seconds,filename
+Login_Valid_User,open_browser,,,,,chrome,,
+Login_Valid_User,navigate_to_login_page,,,,,,,
+Login_Valid_User,login_with_credentials,test@example.com,Test123!,,,,,
+Login_Valid_User,verify_login_success,,,,,,,
+Login_Valid_User,take_screenshot,,,,,,,login_success.png
+Login_Valid_User,logout,,,,,,,
+Login_Valid_User,close_browser,,,,,,,
+Login_Invalid_User,open_browser,,,,,chrome,,
+Login_Invalid_User,navigate_to_login_page,,,,,,,
+Login_Invalid_User,login_with_credentials,invalid@example.com,wrongpass,,,,,
+Login_Invalid_User,verify_login_failure,,,,,,,
+Login_Invalid_User,take_screenshot,,,,,,,login_failure.png
+Login_Invalid_User,close_browser,,,,,,,
